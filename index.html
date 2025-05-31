@@ -2,41 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>rabil.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rabil.wl</title>
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&display=swap" rel="stylesheet">
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      background-color: #000000; /* Full black */
+      height: 100%;
+      background-color: #000;
       font-family: 'UnifrakturCook', cursive;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .message {
-      font-size: 48px;
+      font-size: 64px; /* Bigger and clearer */
       color: #0077ff;
-      text-align: center;
+      line-height: 1.4;
       text-shadow: 0 0 10px #0077ff, 0 0 20px #0055ff;
+      padding: 0 20px;
     }
 
     .red-text {
       color: #ff1a1a;
       text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
     }
+
+    @media (max-width: 600px) {
+      .message {
+        font-size: 40px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="message">
-    Hell is nothing, but <span class="red-text">Communism</span>.
+    Hell is nothing, but<br><span class="red-text">Communism</span>.
   </div>
 
 </body>
